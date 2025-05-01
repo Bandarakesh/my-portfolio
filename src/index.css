@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Reset margins, padding, and set full height */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body, #root {
+  height: 100%;
+  width: 100%;
+  font-family: sans-serif;
+}
+
+/* Optional: make the root container center content */
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Make sure App fills the screen */
+#root > div {
+  flex: 1;
+  padding: 1rem;
+}
+
