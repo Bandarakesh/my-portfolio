@@ -5,6 +5,7 @@ import ghPages from 'vite-plugin-gh-pages';
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
+  
   base: '/my-portfolio/', // Make sure this matches your GitHub repo name
   build: {
     outDir: 'dist', // Ensure Vite builds the app to the dist folder
