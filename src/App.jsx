@@ -1,22 +1,18 @@
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Navbar  from './components/Navbar';
-import Contact from './pages/Contact';
-import Home from './pages/Home';
-import Projects from './pages/Projects';
+import React from 'react';
+import Hero from './components/Hero';
+import Projects from './components/Projects';
+import Technologies from './components/Technologies';
+import Contact from './components/Contact';
 
-function App()
-{
-  return(
-    <Router>
-    <Navbar />
-    <Routes>
-      <Route path="/" element={<Home />} />
-      <Route path="/Projects" element={<Projects />} />
-      <Route path="/Contact" element={<Contact />} />
-    </Routes>
-  </Router>
+function App() {
+  return (
+    <div className="scroll-smooth">
+      <Hero />
+      <Projects />
+      <Technologies />
+      <Contact />
+    </div>
   );
-
 }
 
 export default App;
