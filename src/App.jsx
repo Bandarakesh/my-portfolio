@@ -6,7 +6,7 @@ import Contact from './components/Contact';
 
 function App() {
   return (
-    <div className="scroll-smooth">
+    <div style={{ backgroundColor: '#f7fafc', color: 'black', minHeight: '100vh' }}>
       <Hero />
       <Projects />
       <Technologies />
@@ -16,3 +16,4 @@ function App() {
 }
 
 export default App;
+// {//className="scroll-smooth bg-gray-100  text-white">}

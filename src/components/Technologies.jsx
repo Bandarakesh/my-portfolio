@@ -1,30 +1,37 @@
 import { motion } from 'framer-motion';
+
 const Technologies = () => {
-    const techStack = ["React", "Tailwind CSS", "JavaScript", "HTML5", "CSS3", "Git", "GitHub"];
-  
-    return (
-      <section id="contact" className="min-h-screen flex items-center justify-center bg-black text-white text-center">
-        <motion.div 
-        initial={{ opacity: 0, y: -50 }} 
-        animate={{ opacity: 1, y: 0 }} 
-        transition={{ duration: 1 }}
-        className="text-center p-6"
-      >
-        <h2 className="text-4xl font-bold mb-12 text-center">Technologies</h2>
-        <div className="flex flex-wrap justify-center gap-4">
-          {techStack.map((tech, index) => (
-            <span
-              key={index}
-              className="bg-white border border-gray-300 rounded-full px-5 py-2 text-sm font-medium shadow hover:shadow-md transition"
-            >
-              {tech}
-            </span>
-          ))}
-        </div>
-        </motion.div>
-      </section>
-    );
+  const techCategories = {
+    "Programming Languages": ["Python (Pandas, NumPy)", "Java", "C++", "SQL"],
+    "AI/ML": ["Deep Learning", "NLP", "RAG", "LangChain", "LLMs (OpenAI)"],
+    "Backend Development": ["Django", "FastAPI", "REST APIs", "Microservices Architecture"],
+    "Databases": ["PostgreSQL", "SQLite (Query Optimization, Indexing)"],
+    "Tools & Platforms": ["Git", "GitHub", "AWS (Basic)", "Agile/Jira", "VS Code"],
+    "Data Processing": ["Large-scale data ingestion (100+ data points/sec)", "Real-time analytics"],
   };
-  
-  export default Technologies;
-  
+
+  return (
+    <section id="technologies" className="min-h-screen flex items-center justify-center bg-black text-white text-center px-4">
+  <motion.div
+    initial={{ opacity: 0, y: -50 }}
+    animate={{ opacity: 1, y: 0 }}
+    transition={{ duration: 1 }}
+    className="text-center p-6 max-w-6xl"
+  >
+    <h2 className="text-4xl font-bold mb-12 text-center">Technologies</h2>
+    <div>
+      {Object.entries(techCategories).map(([category, items], index) => (
+        <div key={index} className="text-left mb-16"> {/* Added margin-bottom */}
+          <h3 className="text-2xl font-semibold mb-4">{category}</h3>
+          <p className="text-sm leading-relaxed"> {/* Added paragraph for comma-separated list */}
+            {items.join(", ")} {/* Join items with commas */}
+          </p>
+        </div>
+      ))}
+    </div>
+  </motion.div>
+</section>
+  );
+};
+
+export default Technologies;
