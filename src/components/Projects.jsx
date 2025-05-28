@@ -1,83 +1,3 @@
-// import { motion } from 'framer-motion';
-
-// const Projects = () => {
-//   const projects = [
-//     {
-//       title: "AI-Enhanced Clinical Decision Support System",
-//       description: [
-//         " Processed 100+ real-time patient vitals/sec using FastAPI, reducing sepsis prediction latency by 40%.",
-//         " Built a RAG-based chatbot using LangChain, trained on medical PDFs & ICU data (Pinecone vectors), improving answer accuracy by 35%.",
-//         " Engineered real-time SMS alerts (<2 sec latency) and dashboards, improving ICU intervention efficiency by 25%.",
-//         " RAG Pipeline: Ingested 1000+ medical records (PDFs/CSV) via OpenAI embeddings.",
-//       ],
-//       link: "https://github.com/Bandarakesh/sepsis_prediction_system",
-//     },
-//     {
-//       title: "CampusConnect (Django Web App)",
-//       description: [
-//         " Developed a scalable backend with JWT authentication supporting 100+ concurrent users.",
-//         " Reduced API response time by 30% via PostgreSQL indexing and query optimization.",
-//         " Implemented Agile methodologies (sprints, Jira) for iterative feature delivery.",
-//       ],
-//       link: "https://github.com/Bandarakesh/django_blog",
-//     },
-//     {
-//       title:"node-time-api-servers",
-//       description: [
-//         " Built custom Node.js servers from scratch using core HTTP modules to handle real-time time retrieval and dynamic JSON API responses.",
-//         " Demonstrated strong backend fundamentals including request routing, URL parsing, and JSON data handling without external frameworks.",
-//         " Showcased clean, modular code design and low-level server architecture to highlight deep understanding of server-side development.",
-//       ],
-//       link: "https://github.com/Bandarakesh/js_project"
-//     },
-//     {
-//       title: "Brain Tumor Detection Using Deep Learning",
-//       description: [
-//         " Built a CNN model for MRI scan classification with 92% recall on imbalanced datasets.",
-//         " Designed an image preprocessing pipeline and tuned hyperparameters for low-latency deployment.",
-//       ],
-//       link: "#",
-//     },
-//     {
-//       title: "Portfolio Website",
-//       description: ["A modern single-page React portfolio built with Vite and Tailwind CSS."],
-//       link: "https://bandarakesh.github.io/my-portfolio/",
-//     },
-//     {
-//       title: "Weather App",
-//       description: ["Fetches real-time weather using a public API with a clean UI."],
-//       link: "#",
-//     },
-//   ];
-
-//   return (
-//     <section id="projects" className="min-h-screen flex items-center justify-center bg-black text-white text-center">
-//       <motion.div
-//         initial={{ opacity: 0, y: -50 }}
-//         animate={{ opacity: 1, y: 0 }}
-//         transition={{ duration: 1 }}
-//         className="text-center p-6"
-//       >
-//         <h2 className="text-4xl font-bold mb-12 text-center">Projects</h2>
-//         <div className="grid md:grid-cols-2 gap-8">
-//           {projects.map((project, index) => (
-//             <div key={index} className="p-6 shadow hover:shadow-lg transition mb-12"> {/* Removed border */}
-//               <h3 className="text-2xl font-semibold mb-4 bg-gray-800 text-white px-4 py-2 rounded">{project.title}</h3>
-//               <ul className="list-disc list-inside text-left mb-4">
-//                 {project.description.map((point, idx) => (
-//                   <li key={idx}>{point}</li>
-//                 ))}
-//               </ul>
-//               <a href={project.link} className="text-blue-600 font-medium" target="_blank" rel="noopener noreferrer">
-//                 Github 🔗 
-//               </a>
-//             </div>
-//           ))}
-//         </div>
-//       </motion.div>
-//     </section>
-//   );
-// };
 
 // export default Projects;
 import { motion } from 'framer-motion';
@@ -104,7 +24,7 @@ const Projects = () => {
       link: "https://github.com/Bandarakesh/django_blog",
     },
     {
-      title: "node-time-api-servers",
+      title: "Node-time-api-servers",
       description: [
         "Built custom Node.js servers from scratch using core HTTP modules to handle real-time time retrieval and dynamic JSON API responses.",
         "Demonstrated strong backend fundamentals including request routing, URL parsing, and JSON data handling without external frameworks.",
